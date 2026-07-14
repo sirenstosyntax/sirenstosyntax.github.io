@@ -45,7 +45,6 @@ a:focus-visible,button:focus-visible,input:focus-visible{
   outline-offset:3px;
 }
 .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 
 /* ---------- signature: red/silver brand bar (from the DrillGround wordmark rule) ---------- */
 .trim{
@@ -275,30 +274,6 @@ h2{
 }
 .cta-box p{color:var(--steel);max-width:48ch}
 .cta-box p strong{color:var(--bone)}
-.cta-form-wrap{flex:1 1 340px;min-width:280px}
-.signup{display:flex;gap:.8rem;flex-wrap:wrap}
-.signup input[type=email]{
-  flex:1 1 220px;min-width:0;
-  background:var(--soot);border:1px solid var(--ash);
-  color:var(--bone);padding:.95rem 1.1rem;
-  font-family:'IBM Plex Mono',monospace;font-size:.9rem;
-}
-.signup input[type=email]::placeholder{color:var(--steel);opacity:.7}
-.signup input[type=email]:focus{outline:none;border-color:var(--brand-red-bright)}
-.signup .btn{cursor:pointer;flex:0 0 auto}
-.signup-note{
-  flex-basis:100%;margin-top:.6rem;
-  font-family:'IBM Plex Mono',monospace;font-size:.72rem;
-  letter-spacing:.06em;color:var(--steel);
-}
-.signup-msg{
-  flex-basis:100%;margin-top:.8rem;display:none;
-  padding:.9rem 1.1rem;font-size:.92rem;
-  border:1px solid var(--ash);
-}
-.signup-msg.ok{display:block;border-color:#3f7d4e;color:#a7d9b4;background:rgba(63,125,78,.12)}
-.signup-msg.err{display:block;border-color:var(--brand-red);color:#f0a49d;background:rgba(209,40,31,.10)}
-.signup-msg a{color:var(--brand-red-bright)}
 
 /* footer */
 footer{border-top:1px solid var(--ash);padding:2.6rem 0}
@@ -575,15 +550,7 @@ footer{border-top:1px solid var(--ash);padding:2.6rem 0}
       <h2>Help shape DrillGround.</h2>
       <div class="cta-box">
         <p>DrillGround is being built <strong>with</strong> firefighters, company officers, and training divisions — not just for them. Early users get direct input on what ships first, and honest access to what works and what doesn't yet.</p>
-        <div class="cta-form-wrap">
-          <form class="signup" id="kit-form" action="https://app.kit.com/forms/9685009/subscriptions" method="post" novalidate>
-            <label class="sr-only" for="ea-email">Email address</label>
-            <input type="email" name="email_address" id="ea-email" required autocomplete="email" placeholder="you@yourdepartment.gov">
-            <button type="submit" class="btn btn-primary">Request early access</button>
-            <p class="signup-note">No spam. No hype. Unsubscribe anytime.</p>
-            <p class="signup-msg" id="kit-msg" role="status" aria-live="polite"></p>
-          </form>
-        </div>
+        <a class="btn btn-primary" href="mailto:jacklexidrew@gmail.com?subject=DrillGround%20early%20access">Request early access</a>
       </div>
     </div>
   </section>
@@ -603,40 +570,5 @@ footer{border-top:1px solid var(--ash);padding:2.6rem 0}
   </div>
 </footer>
 
-<script>
-(function(){
-  var form = document.getElementById('kit-form');
-  var msg = document.getElementById('kit-msg');
-  if(!form) return;
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var email = form.email_address.value.trim();
-    msg.className = 'signup-msg';
-    if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-      msg.textContent = 'Please enter a valid email address.';
-      msg.classList.add('err');
-      return;
-    }
-    var btn = form.querySelector('button');
-    btn.disabled = true; btn.textContent = 'Sending\u2026';
-    fetch(form.action, {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    }).then(function(r){ return r.json(); }).then(function(data){
-      if(data.status === 'success' || data.status === 'quarantined' || !data.errors){
-        msg.textContent = 'Success! Check your email to confirm your spot.';
-        msg.classList.add('ok');
-        form.email_address.value = '';
-      } else { throw new Error('kit-error'); }
-    }).catch(function(){
-      msg.innerHTML = 'Something went wrong. Please try again, or email us directly at <a href="mailto:jacklexidrew@gmail.com?subject=DrillGround%20early%20access">jacklexidrew@gmail.com</a>.';
-      msg.classList.add('err');
-    }).finally(function(){
-      btn.disabled = false; btn.textContent = 'Request early access';
-    });
-  });
-})();
-</script>
 </body>
 </html>
