@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="DrillGround logo">
+  <defs>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef0f3"/>
+      <stop offset="0.4" stop-color="#b3b9c2"/>
+      <stop offset="0.72" stop-color="#7d838d"/>
+      <stop offset="1" stop-color="#c6cbd3"/>
+    </linearGradient>
+    <linearGradient id="flameOuter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e5311f"/>
+      <stop offset="1" stop-color="#ad1a10"/>
+    </linearGradient>
+    <linearGradient id="flameMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f58a1f"/>
+      <stop offset="1" stop-color="#e3541c"/>
+    </linearGradient>
+    <linearGradient id="flameCore" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd44d"/>
+      <stop offset="1" stop-color="#f7941d"/>
+    </linearGradient>
+    <linearGradient id="gridfade" x1="0" y1="300" x2="0" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eceef2"/>
+      <stop offset="1" stop-color="#a2a9b3"/>
+    </linearGradient>
+    <clipPath id="innerClip">
+      <path d="M256 80 L134 118 L134 246 C134 318 178 376 256 430 C334 376 378 318 378 246 L378 118 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- outer shield: silver rim -->
+  <path d="M256 28 L92 78 L92 250 C92 334 152 412 256 480 C360 412 420 334 420 250 L420 78 Z"
+        fill="url(#rim)"/>
+  <!-- dark bevel edge -->
+  <path d="M256 47 L108 93 L108 249 C108 326 164 398 256 460 C348 398 404 326 404 249 L404 93 Z"
+        fill="#3a3e45"/>
+  <!-- black face -->
+  <path d="M256 52 L112 97 L112 248 C112 324 168 394 256 454 C344 394 400 324 400 248 L400 97 Z"
+        fill="#101114"/>
+
+  <!-- thin red inner outline -->
+  <path d="M256 80 L134 118 L134 246 C134 318 178 376 256 430 C334 376 378 318 378 246 L378 118 Z"
+        fill="none" stroke="#d1281f" stroke-width="6"/>
+
+  <!-- perspective grid, clipped to inner shield -->
+  <g clip-path="url(#innerClip)" stroke="url(#gridfade)" stroke-linecap="round" fill="none">
+    <line x1="256" y1="300" x2="256" y2="452" stroke-width="10"/>
+    <line x1="256" y1="300" x2="204" y2="436" stroke-width="8"/>
+    <line x1="256" y1="300" x2="308" y2="436" stroke-width="8"/>
+    <line x1="256" y1="300" x2="150" y2="402" stroke-width="7"/>
+    <line x1="256" y1="300" x2="362" y2="402" stroke-width="7"/>
+    <line x1="256" y1="302" x2="112" y2="352" stroke-width="6"/>
+    <line x1="256" y1="302" x2="400" y2="352" stroke-width="6"/>
+    <line x1="120" y1="320" x2="392" y2="320" stroke-width="5"/>
+    <line x1="116" y1="348" x2="396" y2="348" stroke-width="6.5"/>
+    <line x1="120" y1="386" x2="392" y2="386" stroke-width="8"/>
+  </g>
+
+  <!-- flame -->
+  <g>
+    <path fill="url(#flameOuter)" d="
+      M256 86
+      C261 120 284 137 297 164
+      C305 182 303 199 292 209
+      C307 203 316 189 317 173
+      C320 176 324 180 327 185
+      C339 205 346 229 344 253
+      C336 291 303 315 256 315
+      C209 315 176 291 172 253
+      C166 229 173 205 185 185
+      C188 180 192 176 195 173
+      C196 189 205 203 220 209
+      C209 199 207 182 215 165
+      C228 138 251 122 256 92 Z"/>
+    <path fill="url(#flameMid)" d="
+      M256 162
+      C260 186 275 197 281 218
+      C285 233 280 244 271 249
+      C283 244 290 233 292 221
+      C303 238 309 256 305 273
+      C300 297 281 309 256 309
+      C231 309 212 297 207 273
+      C203 256 209 238 220 221
+      C222 233 229 244 241 249
+      C232 244 227 233 231 218
+      C237 197 252 186 256 162 Z"/>
+    <path fill="url(#flameCore)" d="
+      M256 226
+      C264 244 275 251 275 269
+      C275 289 267 303 256 303
+      C245 303 237 289 237 269
+      C237 251 248 244 256 226 Z"/>
+  </g>
+</svg>
