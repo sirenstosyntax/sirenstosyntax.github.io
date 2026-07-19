@@ -124,6 +124,9 @@ h1 .accent{color:var(--brand-red-bright)}
 }
 .hero p strong{color:var(--bone);font-weight:600}
 .btn-row{display:flex;gap:1rem;flex-wrap:wrap;position:relative;z-index:1}
+/* Says plainly that the app is usable now — the page used to read as a waitlist. */
+.hero-live{margin:.9rem 0 0;position:relative;z-index:1;color:var(--steel);
+  font-family:'IBM Plex Mono',monospace;font-size:.8rem;letter-spacing:.04em}
 .btn{
   display:inline-block;text-decoration:none;
   font-family:'IBM Plex Mono',monospace;font-size:.85rem;
@@ -324,7 +327,8 @@ footer{border-top:1px solid var(--ash);padding:2.6rem 0}
       <li><a href="#drillground">DrillGround</a></li>
       <li><a href="#how-we-build">How we build</a></li>
       <li><a href="#founder">Founder</a></li>
-      <li><a class="nav-cta" href="#early-access">Early access</a></li>
+      <li><a href="#early-access">Updates</a></li>
+      <li><a class="nav-cta" href="https://drillground.sirenstosyntax.com/">Open the app</a></li>
     </ul>
   </div>
 </header>
@@ -337,9 +341,10 @@ footer{border-top:1px solid var(--ash);padding:2.6rem 0}
       <h1>Practical software for the <span class="accent">fire service.</span></h1>
       <p>Starting with <strong>DrillGround</strong> — a training and preparation platform that helps firefighters train smarter, prepare better, and perform with confidence. Built by a fire captain. Grounded in the firehouse, not the demo floor.</p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="#early-access">Get early access</a>
+        <a class="btn btn-primary" href="https://drillground.sirenstosyntax.com/">Open DrillGround — free</a>
         <a class="btn btn-ghost" href="#drillground">See what we're building</a>
       </div>
+      <p class="hero-live">Live now in your browser. No account, no signup, works offline.</p>
     </div>
   </div>
 
@@ -369,7 +374,7 @@ footer{border-top:1px solid var(--ash);padding:2.6rem 0}
 
   <section class="dg" id="drillground">
     <div class="wrap">
-      <span class="dg-status">First product · In development</span>
+      <span class="dg-status">First product · Live now</span>
       <div class="dg-head">
         <svg class="dg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="DrillGround logo">
   <defs>
@@ -571,10 +576,11 @@ footer{border-top:1px solid var(--ash);padding:2.6rem 0}
 
   <section id="early-access">
     <div class="wrap">
-      <div class="sec-label">Early access</div>
+      <div class="sec-label">Updates</div>
       <h2>Help shape DrillGround.</h2>
       <div class="cta-box">
-        <p>DrillGround is being built <strong>with</strong> firefighters, company officers, and training divisions — not just for them. Early users get direct input on what ships first, and honest access to what works and what doesn't yet.</p>
+        <p><strong>DrillGround is already live and free</strong> — <a href="https://drillground.sirenstosyntax.com/">open it here</a>. Nothing to sign up for and nothing to wait on.</p>
+        <p>It is being built <strong>with</strong> firefighters, company officers, and training divisions — not just for them. Leave your email if you want to hear what ships next, or tell us what is missing.</p>
         <div class="cta-form-wrap">
           <form class="signup" id="kit-form" action="https://app.kit.com/forms/9685009/subscriptions" method="post" novalidate>
             <label class="sr-only" for="ea-email">Email address</label>
