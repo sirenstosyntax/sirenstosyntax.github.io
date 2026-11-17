@@ -1,6 +1,5 @@
 /* Sirens to Syntax: shared styles for the advisory homepage and the Tools page.
-   Palette comes from the fire service itself: dress-uniform navy, apparatus red,
-   and the red-and-silver chevron striping on the back of a rig. */
+   Palette: dress-uniform navy, apparatus red used sparingly, white and light gray. */
 
 :root{
   --navy:#0f1b33;
@@ -82,14 +81,6 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset
 .hero .btn-row{margin-top:2.5rem}
 .hero--page{padding:76px 0 72px}
 .hero--page h1{font-size:clamp(2.2rem,4.6vw,3.3rem);max-width:20ch}
-
-/* the one loud element: apparatus chevrons */
-.chevrons{display:flex;height:22px;background:var(--navy)}
-.chevrons::before,.chevrons::after{
-  content:"";flex:1 1 50%;
-  background:repeating-linear-gradient(-58deg,var(--red) 0 30px,var(--silver) 30px 60px);
-}
-.chevrons::after{transform:scaleX(-1)}
 
 /* ---------- buttons ---------- */
 .btn-row{display:flex;gap:.9rem;flex-wrap:wrap}
