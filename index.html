@@ -18,355 +18,26 @@
 <meta property="og:description" content="Independent AI policy, governance, and adoption help for fire and EMS agencies, from a working fire captain with a master's degree in AI.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.sirenstosyntax.com/">
+<meta property="og:image" content="https://www.sirenstosyntax.com/share-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sirens to Syntax: AI advisory for fire and EMS agencies">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --soot:#131417;
-  --smoke:#1c1e23;
-  --ash:#2b2e35;
-  --bone:#edeae2;
-  --steel:#9aa1ab;
-  --brand-red:#d1281f;
-  --brand-red-bright:#f04b3e;
-  --silver:#c9ced6;
-  --max:1080px;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation:none!important;transition:none!important}
-}
-body{
-  background:var(--soot);
-  color:var(--bone);
-  font-family:'Public Sans',system-ui,sans-serif;
-  font-size:17px;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-}
-a{color:var(--brand-red-bright)}
-a:focus-visible,button:focus-visible,input:focus-visible{
-  outline:2px solid var(--brand-red-bright);
-  outline-offset:3px;
-}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-
-/* ---------- signature: red/silver brand bar (from the DrillGround wordmark rule) ---------- */
-.trim{
-  height:14px;
-  background:
-    repeating-linear-gradient(
-      105deg,
-      var(--brand-red) 0 44px,
-      var(--silver) 44px 58px
-    );
-  border-top:3px solid var(--soot);
-  border-bottom:3px solid var(--soot);
-  box-shadow:0 0 0 1px #000;
-}
-.trim--thin{height:7px}
-
-/* ---------- header ---------- */
-header{
-  border-bottom:1px solid var(--ash);
-  position:sticky;top:0;z-index:20;
-  background:rgba(19,20,23,.92);
-  backdrop-filter:blur(8px);
-}
-.nav{
-  display:flex;align-items:center;justify-content:space-between;
-  height:64px;
-}
-.brand{
-  font-family:'Barlow Condensed',sans-serif;
-  font-weight:700;font-size:1.35rem;letter-spacing:.06em;
-  text-transform:uppercase;color:var(--bone);text-decoration:none;
-  display:flex;align-items:center;gap:.6rem;
-}
-.brand-mark{
-  width:26px;height:26px;flex:none;
-  background:
-    linear-gradient(180deg,transparent 0 36%,var(--silver) 36% 64%,transparent 64%),
-    var(--brand-red);
-}
-.nav-links{display:flex;gap:1.6rem;align-items:center;list-style:none}
-.nav-links a{
-  color:var(--steel);text-decoration:none;
-  font-family:'IBM Plex Mono',monospace;font-size:.78rem;
-  letter-spacing:.1em;text-transform:uppercase;
-}
-.nav-links a:hover{color:var(--bone)}
-.nav-cta{
-  color:#fff!important;background:var(--brand-red);
-  padding:.5rem .9rem;font-weight:500;
-}
-.nav-cta:hover{filter:brightness(1.12)}
-@media (max-width:720px){.nav-links li:not(:last-child){display:none}}
-
-/* ---------- hero ---------- */
-.hero{padding:110px 0 100px;position:relative;overflow:hidden;background-color:var(--soot);background-image:linear-gradient(100deg,var(--soot) 0%,var(--soot) 50%,rgba(19,20,23,.9) 72%,rgba(19,20,23,.78) 100%),repeating-linear-gradient(105deg,rgba(209,40,31,.5) 0 44px,rgba(201,206,214,.3) 44px 58px,rgba(43,46,53,.35) 58px 160px)}
-@media (max-width:720px){.hero{padding:80px 0 72px;background-image:linear-gradient(100deg,var(--soot) 0%,var(--soot) 62%,rgba(19,20,23,.86) 100%),repeating-linear-gradient(105deg,rgba(209,40,31,.5) 0 44px,rgba(201,206,214,.3) 44px 58px,rgba(43,46,53,.35) 58px 160px)}}
-.hero::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(ellipse 70% 55% at 78% 8%,rgba(209,40,31,.12),transparent 65%);
-}
-.eyebrow{
-  font-family:'IBM Plex Mono',monospace;font-size:.78rem;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--brand-red-bright);
-  display:block;margin-bottom:1.4rem;
-}
-h1{
-  font-family:'Barlow Condensed',sans-serif;font-weight:700;
-  font-size:clamp(3rem,8vw,5.6rem);line-height:.98;
-  letter-spacing:.01em;text-transform:uppercase;
-  max-width:14ch;position:relative;z-index:1;
-}
-h1 .accent{color:var(--brand-red-bright)}
-.hero p{
-  max-width:64ch;margin:1.8rem 0 2.4rem;color:var(--steel);
-  font-size:1.1rem;position:relative;z-index:1;
-}
-.hero p strong{color:var(--bone);font-weight:600}
-.btn-row{display:flex;gap:1rem;flex-wrap:wrap;position:relative;z-index:1}
-.hero-live{margin:.9rem 0 0;position:relative;z-index:1;color:var(--steel);
-  font-family:'IBM Plex Mono',monospace;font-size:.8rem;letter-spacing:.04em}
-.btn{
-  display:inline-block;text-decoration:none;
-  font-family:'IBM Plex Mono',monospace;font-size:.85rem;
-  letter-spacing:.08em;text-transform:uppercase;
-  padding:.95rem 1.5rem;border:1px solid transparent;
-}
-.btn-primary{background:var(--brand-red);color:#fff;font-weight:500}
-.btn-primary:hover{filter:brightness(1.12)}
-.btn-ghost{border-color:var(--ash);color:var(--bone)}
-.btn-ghost:hover{border-color:var(--steel)}
-
-/* ---------- sections ---------- */
-section{padding:88px 0}
-.sec-label{
-  font-family:'IBM Plex Mono',monospace;font-size:.78rem;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--steel);
-  display:flex;align-items:center;gap:.9rem;margin-bottom:1.2rem;
-}
-.sec-label::before{
-  content:"";width:34px;height:3px;background:var(--brand-red);flex:none;
-}
-h2{
-  font-family:'Barlow Condensed',sans-serif;font-weight:700;
-  font-size:clamp(2rem,4.5vw,3.1rem);line-height:1.04;
-  text-transform:uppercase;letter-spacing:.01em;max-width:22ch;
-}
-.lede{color:var(--steel);max-width:62ch;margin-top:1.1rem}
-.lede strong{color:var(--bone);font-weight:600}
-
-/* problem cards */
-.cards{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
-  background:var(--ash);border:1px solid var(--ash);margin-top:3rem;
-}
-.card{background:var(--smoke);padding:2rem 1.6rem}
-.card h3{
-  font-family:'Barlow Condensed',sans-serif;font-weight:600;
-  font-size:1.35rem;text-transform:uppercase;letter-spacing:.02em;
-  margin-bottom:.7rem;
-}
-.card p{color:var(--steel);font-size:.95rem}
-@media (max-width:820px){.cards{grid-template-columns:1fr}}
-
-/* drillground */
-.dg{background:var(--smoke);border-top:1px solid var(--ash);border-bottom:1px solid var(--ash)}
-.dg-head{display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap;margin-bottom:1.6rem}
-.dg-logo{width:96px;height:96px;flex:none}
-.dg-wordmark{
-  font-family:'Barlow Condensed',sans-serif;font-weight:700;
-  font-size:clamp(2.6rem,6vw,4rem);line-height:1;
-  text-transform:uppercase;letter-spacing:.02em;
-}
-.dg-wordmark .red{color:var(--brand-red-bright)}
-.dg-tagline{
-  font-family:'IBM Plex Mono',monospace;font-size:.85rem;
-  letter-spacing:.28em;text-transform:uppercase;color:var(--silver);
-  margin-top:.5rem;
-  padding-top:.55rem;
-  border-top:3px solid var(--brand-red);
-  display:inline-block;
-}
-.dg-status{
-  display:inline-block;font-family:'IBM Plex Mono',monospace;
-  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--brand-red-bright);border:1px solid var(--brand-red);
-  padding:.3rem .7rem;margin-bottom:1.6rem;
-}
-.dg-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:start;margin-top:2.6rem}
-@media (max-width:820px){.dg-grid{grid-template-columns:1fr;gap:2.5rem}}
-.dg-feature{padding:1.5rem 0;border-top:1px solid var(--ash)}
-.dg-feature:last-child{border-bottom:1px solid var(--ash)}
-.dg-feature h3{
-  font-family:'Barlow Condensed',sans-serif;font-weight:600;
-  font-size:1.3rem;text-transform:uppercase;margin-bottom:.4rem;
-}
-.dg-feature p{color:var(--steel);font-size:.95rem;max-width:52ch}
-.dg-note{
-  border:1px solid var(--ash);background:var(--soot);padding:1.8rem;
-}
-.dg-note-label{
-  font-family:'IBM Plex Mono',monospace;font-size:.72rem;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--brand-red-bright);
-  margin-bottom:1rem;
-}
-.dg-note ul{list-style:none}
-.dg-note li{
-  padding:.7rem 0;border-top:1px solid var(--ash);
-  color:var(--steel);font-size:.93rem;
-}
-.dg-note li:first-of-type{border-top:none;padding-top:0}
-.dg-note li strong{color:var(--bone);font-weight:600;display:block}
-
-/* brand value badges */
-.values{
-  display:grid;grid-template-columns:repeat(5,1fr);gap:1px;
-  background:var(--ash);border:1px solid var(--ash);margin-top:3rem;
-}
-.value{
-  background:var(--soot);padding:1.3rem 1rem;text-align:center;
-}
-.value svg{width:30px;height:30px;margin-bottom:.6rem;stroke:var(--brand-red-bright)}
-.value span{
-  display:block;font-family:'IBM Plex Mono',monospace;font-size:.68rem;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--silver);
-  line-height:1.5;
-}
-@media (max-width:820px){.values{grid-template-columns:repeat(2,1fr)}.value:last-child{grid-column:span 2}}
-
-/* principles */
-.principles{display:grid;grid-template-columns:repeat(2,1fr);gap:2.6rem 3.5rem;margin-top:3rem}
-@media (max-width:720px){.principles{grid-template-columns:1fr}}
-.principle{border-left:3px solid var(--brand-red);padding-left:1.4rem}
-.principle h3{
-  font-family:'Barlow Condensed',sans-serif;font-weight:600;
-  font-size:1.4rem;text-transform:uppercase;margin-bottom:.5rem;
-}
-.principle p{color:var(--steel);font-size:.95rem}
-
-/* founder */
-.founder{background:var(--smoke);border-top:1px solid var(--ash);border-bottom:1px solid var(--ash)}
-.founder-grid{display:grid;grid-template-columns:auto 1fr 230px;gap:3rem;align-items:start;margin-top:2.4rem}
-.founder-photo{margin:0;border:1px solid var(--ash);border-bottom:5px solid var(--brand-red);align-self:stretch;overflow:hidden}
-.founder-photo img{display:block;width:100%;height:100%;object-fit:cover}
-@media (max-width:900px){.founder-grid{grid-template-columns:auto 1fr}.founder-photo{grid-column:1/-1;max-height:340px}.founder-photo img{object-position:center 20%}}
-@media (max-width:720px){.founder-grid{grid-template-columns:1fr}}
-.founder-badge{
-  width:150px;height:150px;flex:none;
-  background:var(--soot);border:1px solid var(--ash);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:.4rem;
-}
-.founder-badge .yrs{
-  font-family:'Barlow Condensed',sans-serif;font-weight:700;
-  font-size:3rem;line-height:1;color:var(--brand-red-bright);
-}
-.founder-badge .lbl{
-  font-family:'IBM Plex Mono',monospace;font-size:.62rem;
-  letter-spacing:.12em;text-transform:uppercase;color:var(--steel);
-  text-align:center;padding:0 .6rem;
-}
-.founder-text p{color:var(--steel);max-width:62ch;margin-bottom:1.1rem}
-.founder-text p strong{color:var(--bone);font-weight:600}
-
-/* bottom product CTAs */
-.cta-box{
-  border:1px solid var(--ash);background:var(--smoke);
-  padding:3rem;margin-top:2.6rem;
-  display:flex;flex-direction:column;align-items:flex-start;gap:1.6rem;
-}
-.cta-box p{color:var(--steel);max-width:62ch}
-.cta-box p strong{color:var(--bone)}
-.cta-form-wrap{flex:1 1 340px;min-width:280px}
-.signup{display:flex;gap:.8rem;flex-wrap:wrap}
-.signup input[type=email]{
-  flex:1 1 220px;min-width:0;
-  background:var(--soot);border:1px solid var(--ash);
-  color:var(--bone);padding:.95rem 1.1rem;
-  font-family:'IBM Plex Mono',monospace;font-size:.9rem;
-}
-.signup input[type=email]::placeholder{color:var(--steel);opacity:.7}
-.signup input[type=email]:focus{outline:none;border-color:var(--brand-red-bright)}
-.signup .btn{cursor:pointer;flex:0 0 auto}
-.signup-note{
-  flex-basis:100%;margin-top:.6rem;
-  font-family:'IBM Plex Mono',monospace;font-size:.72rem;
-  letter-spacing:.06em;color:var(--steel);
-}
-.signup-msg{
-  flex-basis:100%;margin-top:.8rem;display:none;
-  padding:.9rem 1.1rem;font-size:.92rem;
-  border:1px solid var(--ash);
-}
-.signup-msg.ok{display:block;border-color:#3f7d4e;color:#a7d9b4;background:rgba(63,125,78,.12)}
-.signup-msg.err{display:block;border-color:var(--brand-red);color:#f0a49d;background:rgba(209,40,31,.10)}
-.signup-msg a{color:var(--brand-red-bright)}
-
-/* product CTAs inside a dg block */
-.dg h2{max-width:28ch}
-.dg-actions{margin-top:2.6rem}
-.dg-note p{color:var(--steel);font-size:.93rem;margin:0}
-
-/* footer */
-footer{border-top:1px solid var(--ash);padding:2.6rem 0}
-.foot-meta{display:flex;flex-direction:column;gap:.45rem}
-.foot{
-  display:flex;justify-content:space-between;align-items:center;
-  gap:1.5rem;flex-wrap:wrap;
-}
-.foot p, .foot a{
-  color:var(--steel);font-family:'IBM Plex Mono',monospace;
-  font-size:.75rem;letter-spacing:.06em;text-decoration:none;
-}
-.foot a:hover{color:var(--bone)}
-.foot-links{display:flex;gap:1.6rem;list-style:none}
-/* ---------- advisory homepage ---------- */
-.hero h1{font-size:clamp(2.5rem,6vw,4.4rem);max-width:19ch}
-.hero p.hero-cred{margin:-1.2rem 0 2.4rem;color:var(--bone);font-size:1rem}
-.after-cards{color:var(--steel);max-width:62ch;margin-top:2.2rem}
-.after-cards strong{color:var(--bone);font-weight:600}
-.cards--2{grid-template-columns:repeat(2,1fr)}
-@media (max-width:820px){.cards--2{grid-template-columns:1fr}}
-.dg .card{background:var(--soot)}
-.card .card-link{
-  display:inline-block;margin-top:1rem;
-  font-family:'IBM Plex Mono',monospace;font-size:.78rem;
-  letter-spacing:.08em;text-transform:uppercase;
-}
-.independence{
-  border-left:3px solid var(--brand-red);padding-left:1.4rem;
-  margin-top:2.4rem;color:var(--steel);max-width:62ch;
-}
-.independence strong{color:var(--bone);font-weight:600}
-.founder--plain{background:transparent;border-top:none;border-bottom:none}
-.founder--plain .founder-grid{grid-template-columns:auto 1fr}
-@media (max-width:720px){.founder--plain .founder-grid{grid-template-columns:1fr}}
-.founder-points{list-style:none;margin-top:.4rem}
-.founder-points li{color:var(--steel);max-width:62ch;padding:.75rem 0;border-top:1px solid var(--ash)}
-.founder-points li strong{color:var(--bone);font-weight:600}
-.nav-cta,.brand{white-space:nowrap}
-.contact-email{font-family:'IBM Plex Mono',monospace;font-size:.95rem}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-
-<header>
+<header class="site-header">
   <div class="wrap nav">
     <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>Sirens to Syntax</a>
     <ul class="nav-links">
-      <li><a href="#problem">The problem</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#expect">What to expect</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#tools">Tools</a></li>
+      <li><a href="/tools.html">Tools</a></li>
       <li><a class="nav-cta" href="mailto:grant@sirenstosyntax.com?subject=AI%20advisory%20inquiry">Contact</a></li>
     </ul>
   </div>
@@ -376,149 +47,147 @@ footer{border-top:1px solid var(--ash);padding:2.6rem 0}
 
   <div class="hero">
     <div class="wrap">
-      <span class="eyebrow">Sirens to Syntax · AI Advisory for Fire and EMS</span>
-      <h1>AI is already in your department. <span class="accent">Make sure it's working for you.</span></h1>
-      <p>Sirens to Syntax helps fire and EMS agencies put AI to work safely and practically, so their people spend less time on paperwork and more time on training, their crews, and the communities they serve.</p>
+      <p class="hero-kicker">AI advisory for fire and EMS agencies</p>
+      <h1>AI is already in your department. Make sure it's working for you.</h1>
+      <p class="hero-lede">Sirens to Syntax helps fire and EMS agencies put AI to work safely and practically, so their people spend less time on paperwork and more time on training, their crews, and the communities they serve.</p>
       <p class="hero-cred">Independent advice from a working fire captain with a master's degree in artificial intelligence.</p>
       <div class="btn-row">
         <a class="btn btn-primary" href="mailto:grant@sirenstosyntax.com?subject=AI%20advisory%20inquiry">Start a conversation</a>
-        <a class="btn btn-ghost" href="#services">See how I can help</a>
+        <a class="btn btn-quiet" href="#services">See how I can help</a>
       </div>
     </div>
   </div>
+  <div class="chevrons" role="presentation"></div>
 
-  <div class="trim" role="presentation"></div>
-
-  <section id="problem">
-    <div class="wrap">
-      <div class="sec-label">The problem</div>
+  <section class="band" id="problem">
+    <div class="wrap split">
       <h2>Your people are already using AI.</h2>
-      <p class="lede">Chances are someone in your department has used a chatbot to draft a report, a policy, or a public statement. Most of the time nobody asked first, because there was no rule to ask about. That leaves a chief with questions that are hard to answer.</p>
-      <div class="cards">
-        <div class="card">
-          <h3>What went in?</h3>
-          <p>What incident, patient, or personnel information has gone into a public AI tool?</p>
-        </div>
-        <div class="card">
-          <h3>Who checks it?</h3>
-          <p>Who checks AI-written work before it goes into a record or out to the public?</p>
-        </div>
-        <div class="card">
-          <h3>What do you say?</h3>
-          <p>What do you tell the council, the union, or a reporter who asks how your department uses AI?</p>
-        </div>
+      <div>
+        <p class="lede">Chances are someone in your department has used a chatbot to draft a report, a policy, or a public statement. Most of the time nobody asked first, because there was no rule to ask about. That leaves a chief with questions that are hard to answer.</p>
+        <ul class="ruled questions">
+          <li>What incident, patient, or personnel information has gone into a public AI tool?</li>
+          <li>Who checks AI-written work before it goes into a record or out to the public?</li>
+          <li>What do you tell the council, the union, or a reporter who asks how your department uses AI?</li>
+        </ul>
+        <p class="callout"><strong>A ban doesn't settle it.</strong> People keep using the tools on their own phones, and you lose the ability to see it. A clear policy and a short list of approved uses bring it into the open, where you can manage it.</p>
       </div>
-      <p class="after-cards"><strong>A ban doesn't settle it.</strong> People keep using the tools on their own phones, and you lose the ability to see it. A clear policy and a short list of approved uses bring it into the open, where you can manage it.</p>
     </div>
   </section>
 
-  <section class="dg" id="services">
+  <section class="band band--mist" id="services">
     <div class="wrap">
-      <div class="sec-label">Services</div>
-      <h2>How I can help.</h2>
-      <div class="dg-grid">
+      <div class="split">
         <div>
-          <div class="dg-feature">
+          <h2>How I can help.</h2>
+          <p class="split-aside">Not sure which fits? Start with a conversation and we'll sort it out together.</p>
+        </div>
+        <ul class="ruled">
+          <li>
             <h3>AI readiness review</h3>
             <p>I find out where AI is already in use across your department, what information is going into it, and where the real exposure is. You get a short written summary with the first things to fix.</p>
-          </div>
-          <div class="dg-feature">
+          </li>
+          <li>
             <h3>Policy and governance</h3>
             <p>I help you build an AI policy that fits your department instead of a template pulled from the internet. It covers which tools are approved, what information stays out of them, who reviews AI-assisted work, and how the policy gets updated as the tools change.</p>
-          </div>
-          <div class="dg-feature">
+          </li>
+          <li>
             <h3>Practical adoption</h3>
             <p>I help you pick the administrative work where AI saves the most time, such as reports, accreditation documentation, training material, and grant writing, and put it to use with guardrails your staff can follow.</p>
-          </div>
-          <div class="dg-feature">
+          </li>
+          <li>
             <h3>Briefings and training</h3>
             <p>I brief command staff and train company officers and administrative staff on what AI does well, where it fails, and what your policy expects of them. I also speak at conferences and chiefs' meetings.</p>
-          </div>
-          <div class="dg-feature">
+          </li>
+          <li>
             <h3>Vendor questions</h3>
             <p>When a vendor pitches an AI feature in software you already buy, I help you ask the questions that show what it does with your data and how its output gets checked.</p>
-          </div>
-        </div>
-        <aside class="dg-note" aria-label="How I work">
-          <div class="dg-note-label">How I work</div>
-          <ul>
-            <li><strong>People stay in charge.</strong>AI output is a draft. A person reviews it and owns the decision.</li>
-            <li><strong>Time saved goes back to people.</strong>The hours AI takes off paperwork should go to training, crews, and the community.</li>
-            <li><strong>Policy has to keep up.</strong>The tools change every few months, so the policy is built to be revised without starting over.</li>
-          </ul>
-        </aside>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>
-
-  <section class="founder founder--plain" id="about">
-    <div class="wrap">
-      <div class="sec-label">Why work with me</div>
-      <h2>A fire officer who also knows the technology.</h2>
-      <div class="founder-grid">
-        <div class="founder-badge" aria-hidden="true">
-          <span class="yrs">20+</span>
-          <span class="lbl">Years in emergency services</span>
+      <div class="principles">
+        <div>
+          <h3>People stay in charge.</h3>
+          <p>AI output is a draft. A person reviews it and owns the decision.</p>
         </div>
-        <div class="founder-text">
-          <p>I'm <strong>Grant Collings</strong>, a fire captain with more than 20 years in emergency services and a master's degree in artificial intelligence.</p>
-          <ul class="founder-points">
-            <li><strong>I still work shifts.</strong> I command an engine company and a hazmat team, so I know what a shift leaves time for and what it doesn't.</li>
-            <li><strong>I've written department policy.</strong> I've helped write management policies and I serve on my department's accreditation team, so I write for how policy gets used and audited.</li>
-            <li><strong>I've taught firefighters for years.</strong> I spent six years as a training division instructor, which is where I learned to explain technical material to people with no time to waste.</li>
-            <li><strong>I build AI software myself.</strong> That keeps my advice grounded in what these tools can and can't do today.</li>
-          </ul>
+        <div>
+          <h3>Time saved goes back to people.</h3>
+          <p>The hours AI takes off paperwork should go to training, crews, and the community.</p>
+        </div>
+        <div>
+          <h3>Policy has to keep up.</h3>
+          <p>The tools change every few months, so the policy is built to be revised without starting over.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="dg" id="tools">
+  <section class="band" id="expect">
     <div class="wrap">
-      <div class="sec-label">Tools I've built</div>
+      <h2>What to expect.</h2>
+      <ol class="steps">
+        <li>
+          <h3>We talk</h3>
+          <p>You tell me what your department is dealing with. It costs nothing and commits you to nothing.</p>
+        </li>
+        <li>
+          <h3>I review where you stand</h3>
+          <p>I look at how AI is already being used, what policies you have, and where the exposure is.</p>
+        </li>
+        <li>
+          <h3>You get a written plan</h3>
+          <p>You receive clear recommendations, and we agree on what I help you build: policy, training, or adoption.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band band--mist" id="about">
+    <div class="wrap split">
+      <div>
+        <h2>A fire officer who also knows the technology.</h2>
+        <!-- founder photo goes here: <figure class="about-photo"><img src="grant-collings.jpg" alt="Grant Collings"></figure> -->
+      </div>
+      <div>
+        <p class="about-intro">I'm Grant Collings, a fire captain with more than 20 years in emergency services and a master's degree in artificial intelligence.</p>
+        <ul class="ruled about-points">
+          <li><strong>I still work shifts.</strong> I command an engine company and a hazmat team, so I know what a shift leaves time for and what it doesn't.</li>
+          <li><strong>I've written department policy.</strong> I've helped write management policies and I serve on my department's accreditation team, so I write for how policy gets used and audited.</li>
+          <li><strong>I've taught firefighters for years.</strong> I spent six years as a training division instructor, which is where I learned to explain technical material to people with no time to waste.</li>
+          <li><strong>I build AI software myself.</strong> That keeps my advice grounded in what these tools can and can't do today.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="tools">
+    <div class="wrap split">
       <h2>I also build software for the fire service.</h2>
-      <p class="lede">It keeps me close to what AI does well and where it falls short.</p>
-      <div class="cards cards--2">
-        <div class="card">
-          <h3>DrillGround</h3>
-          <p>A free web tool for planning drills that crews can run during a shift. It supports officers and does not replace instructors or your SOPs and SOGs.</p>
-          <a class="card-link" href="https://drillground.sirenstosyntax.com/">Open DrillGround</a>
-        </div>
-        <div class="card">
-          <h3>BadgeDay</h3>
-          <p>Oral board practice for hiring candidates and promotional exam prep for firefighters and engineers.</p>
-          <a class="card-link" href="https://badgeday.com/">Visit badgeday.com</a>
-        </div>
+      <div>
+        <p class="lede">It keeps me close to what AI does well and where it falls short. DrillGround helps officers plan drills, and BadgeDay helps candidates and firefighters prepare for oral boards and promotional exams.</p>
+        <div class="btn-row"><a class="btn btn-outline" href="/tools.html">See the tools</a></div>
+        <p class="callout"><strong>My advisory work is independent of these products.</strong> I won't steer you toward my own tools, and I take no commission or referral fee from any AI vendor.</p>
       </div>
-      <p class="independence"><strong>My advisory work is independent of these products.</strong> I won't steer you toward my own tools, and I take no commission or referral fee from any AI vendor.</p>
     </div>
   </section>
 
-  <section id="contact">
+  <section class="band band--navy contact" id="contact">
     <div class="wrap">
-      <div class="sec-label">Contact</div>
       <h2>Start with a conversation.</h2>
-      <div class="cta-box">
-        <p>Tell me what your department is dealing with: staff already using AI, a vendor pitching an AI feature, or a council asking questions. <strong>It costs nothing to ask, and you pay nothing until you've committed to a service.</strong></p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="mailto:grant@sirenstosyntax.com?subject=AI%20advisory%20inquiry">Email Grant</a>
-        </div>
-        <p class="contact-email"><a href="mailto:grant@sirenstosyntax.com?subject=AI%20advisory%20inquiry">grant@sirenstosyntax.com</a></p>
+      <p>Tell me what your department is dealing with: staff already using AI, a vendor pitching an AI feature, or a council asking questions. <strong>It costs nothing to ask, and you pay nothing until you've committed to a service.</strong></p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="mailto:grant@sirenstosyntax.com?subject=AI%20advisory%20inquiry">Email Grant</a>
+        <a class="contact-email" href="mailto:grant@sirenstosyntax.com?subject=AI%20advisory%20inquiry">grant@sirenstosyntax.com</a>
       </div>
     </div>
   </section>
 
 </main>
 
-<div class="trim" role="presentation"></div>
-
-<footer>
+<footer class="site-footer">
   <div class="wrap foot">
-    <div class="foot-meta">
-      <p>Sirens to Syntax LLC · <a href="https://drillground.sirenstosyntax.com/">DrillGround</a> · <a href="https://badgeday.com/">BadgeDay</a></p>
-      <p>AI advisory and software for the fire service · Not affiliated with any fire department</p>
-    </div>
+    <p>Sirens to Syntax LLC. AI advisory and software for the fire service. Not affiliated with any fire department.</p>
     <ul class="foot-links">
+      <li><a href="/tools.html">Tools</a></li>
       <li><a href="mailto:grant@sirenstosyntax.com">Contact</a></li>
       <li><a href="/privacy.html">Privacy Policy</a></li>
       <li><a href="/terms.html">Terms</a></li>
