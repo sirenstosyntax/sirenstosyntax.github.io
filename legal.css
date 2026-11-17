@@ -1,0 +1,125 @@
+/* Sirens to Syntax: shared styles for the Privacy, Terms, and Refunds pages.
+   Matches site.css: navy header and footer, white page, one typeface. */
+
+:root{
+  --navy:#0f1b33;
+  --navy-deep:#0a1325;
+  --navy-line:#26365a;
+  --red:#d1281f;
+  --red-text:#b3211a;
+  --white:#ffffff;
+  --mist:#f2f4f7;
+  --ink:#141c2b;
+  --slate:#4a5568;
+  --rule:#d5dae2;
+  --on-navy:#eef1f5;
+  --on-navy-soft:#b4bdcc;
+  --sans:'Public Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mark:'Barlow Condensed','Arial Narrow',sans-serif;
+  --measure:68ch;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+
+body{
+  margin:0;
+  background:var(--white);
+  color:var(--slate);
+  font-family:var(--sans);
+  font-size:1.0625rem;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* the old striped rules are retired */
+.trim{display:none}
+
+.wrap{width:100%;max-width:860px;margin:0 auto;padding:0 28px}
+
+/* ---- masthead ---- */
+.masthead{background:var(--navy);border-bottom:1px solid var(--navy-line);padding:18px 0}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.wordmark{
+  font-family:var(--mark);font-weight:700;font-size:1.4rem;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:var(--on-navy);text-decoration:none;
+}
+.wordmark span{color:inherit}
+.wordmark:hover{color:var(--white)}
+.backlink{font-size:.93rem;font-weight:500;color:var(--on-navy-soft);text-decoration:none}
+.backlink:hover{color:var(--white)}
+
+/* ---- title block ---- */
+.titleblock{padding:64px 0 34px;border-bottom:2px solid var(--ink)}
+.eyebrow{font-size:.95rem;font-weight:600;color:var(--slate);margin:0 0 12px}
+h1{
+  font-size:clamp(2.2rem,5.4vw,3.2rem);
+  font-weight:700;line-height:1.08;letter-spacing:-.02em;
+  color:var(--ink);margin:0 0 18px;
+}
+.dates{font-size:.92rem;color:var(--slate);margin:0}
+.dates b{color:var(--ink);font-weight:600}
+
+/* ---- callout: the short version ---- */
+.callout{background:var(--mist);border-left:4px solid var(--red);padding:24px 28px;margin:14px 0 8px}
+.callout h2{margin-top:0;border:0;padding:0;font-size:1.2rem}
+.callout p:first-child{margin-top:0}
+.callout p:last-child{margin-bottom:0}
+
+/* ---- content ---- */
+main{padding-bottom:24px}
+.content{max-width:var(--measure)}
+
+h2{
+  font-size:1.45rem;font-weight:700;line-height:1.25;letter-spacing:-.012em;
+  color:var(--ink);
+  margin:54px 0 4px;padding-bottom:10px;border-bottom:1px solid var(--rule);
+}
+h3{font-size:1.03rem;font-weight:700;color:var(--ink);margin:30px 0 -6px}
+p{margin:18px 0}
+strong{color:var(--ink);font-weight:600}
+
+a{color:var(--red-text);text-decoration:underline;text-underline-offset:3px}
+a:hover{color:var(--ink)}
+a:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+ul{margin:18px 0;padding-left:0;list-style:none}
+ul li{position:relative;padding-left:22px;margin:9px 0}
+ul li::before{content:"";position:absolute;left:0;top:.78em;width:8px;height:2px;background:var(--ink)}
+
+/* ---- providers table ---- */
+.tablewrap{margin:24px 0;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th{
+  font-weight:600;font-size:.85rem;color:var(--slate);text-align:left;
+  padding:0 16px 10px 0;border-bottom:2px solid var(--ink);white-space:nowrap;
+}
+td{padding:14px 16px 14px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td:first-child{color:var(--ink);font-weight:600;white-space:nowrap}
+
+/* ---- footer ---- */
+footer{margin-top:72px;background:var(--navy-deep);color:var(--on-navy-soft);padding:40px 0 48px}
+.footgrid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.addr{font-style:normal;font-size:.93rem;line-height:1.75}
+.addr .name{
+  font-family:var(--mark);font-weight:700;font-size:1.2rem;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:var(--on-navy);display:block;margin-bottom:6px;
+}
+footer a{color:var(--on-navy)}
+footer a:hover{color:var(--white)}
+.colophon{font-size:.9rem;text-align:right}
+.colophon a{color:var(--on-navy-soft);text-decoration:none;display:block;margin-bottom:8px}
+
+@media (max-width:600px){
+  body{font-size:1rem}
+  .titleblock{padding:44px 0 28px}
+  h2{font-size:1.28rem;margin-top:44px}
+  .callout{padding:20px}
+  .colophon{text-align:left}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+}
