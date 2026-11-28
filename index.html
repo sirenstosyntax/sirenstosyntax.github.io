@@ -45,6 +45,17 @@
 
 <main id="top">
 
+  <section class="annex-strip" aria-label="Free AI policy template">
+    <div class="wrap annex-strip-inner">
+      <div class="annex-strip-copy">
+        <p class="annex-strip-kicker">Free template</p>
+        <h2 class="annex-strip-title">Fire &amp; EMS AI Use Annex</h2>
+        <p class="annex-strip-text">Add fire, rescue, and EMS rules to your city or county AI policy. Six pages, free, no sign-up.</p>
+      </div>
+      <a class="btn btn-primary annex-strip-btn" id="annex-home-cta" href="/annex/">Get the free annex</a>
+    </div>
+  </section>
+
   <div class="hero">
     <div class="wrap">
       <p class="hero-kicker">AI advisory for fire and EMS agencies</p>
@@ -196,5 +207,10 @@
     </ul>
   </div>
 </footer>
+<script>
+  document.getElementById('annex-home-cta').addEventListener('click', function () {
+    if (window.posthog) { posthog.capture('annex_homepage_click'); }
+  });
+</script>
 </body>
 </html>
